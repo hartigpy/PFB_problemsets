@@ -2,6 +2,7 @@
 import sys
 
 count = int(sys.argv[1])
+print(count,"is the tested number")
 
 if count > 0: # tests if the number is positive
     print(count, "is positive") 
