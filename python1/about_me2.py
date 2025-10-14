@@ -8,7 +8,7 @@ my_fav_color = sys.argv[2]
 my_fav_activity = sys.argv[3]
 my_fav_animal = sys.argv[4]
 
-# now uding + to separate print arguments
+# now using + to separate print arguments
 print("My name: " + my_name) 
 print("My favorite color: " + my_fav_color)
 print("My favorite activity: " + my_fav_activity)
