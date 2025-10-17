@@ -1,0 +1,22 @@
+#!/usr/bin/env python3 
+
+# test dna sequence
+dna = "ATGCTCGA"
+print(type(dna))
+
+# create a new empty dictionary
+nt_count = {}
+print(type(nt_count))
+
+# # for each nt we test
+nt_length = len(dna)
+for nt in dna:
+     if nt in nt_count:
+         nt_count[nt] = nt_count[nt] + 1
+     else:
+         nt_count[nt] = 1;
+
+nt_GC = (nt_count['G'] + nt_count['C'])/nt_length
+
+print(f'The sequence has the following unique values: {nt_count}')
+print(f'The GC content of this sequence is: {nt_GC:.0%}')  
