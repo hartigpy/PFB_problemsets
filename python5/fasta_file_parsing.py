@@ -1,7 +1,7 @@
 #!/usr/bin/env python3 
 
 ### FASTA file parsing
-# reads in a FASTA file and stores each FASTA record separately in a dictinary
+# reads in a FASTA file and stores each FASTA record separately in a dictionary
 
 # make an empty dictionary
 fasta_dict = {}
