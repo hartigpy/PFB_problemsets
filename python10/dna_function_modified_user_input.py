@@ -18,7 +18,7 @@ try:
 except:
     print("Please provide maximum length of line")     
 
-## Create the function to return 60 nt chunks
+## Create the function to return chunks of provided maximum width
 def dna_width_nt(dna):
     dna_chunk = []
     i = 0
