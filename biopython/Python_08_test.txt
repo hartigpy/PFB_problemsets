@@ -1,0 +1,11 @@
+>c0_g1_i1 len=1163 path=[1:0-1162]
+GATCAAA
+T
+>c1_g1_i1 len=784 path=[50:0-783]
+GGCGGGCGCGGCGCGCGCGCGCGCGCGCGC
+>c3_g1_i1 len=1882 path=[128:0-1881]
+ACGAATCGTACCAAAAATTAAAATT
+>c4_g1_i1 len=827 path=[1:0-826]
+CA
+>c5_g1_i1 len=1465 path=[1:0-1464]
+ACGAA
