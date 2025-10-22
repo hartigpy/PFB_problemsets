@@ -3,32 +3,55 @@
 import pytest
 
 ### Definition of a function to reverse complement a DNA sequence
-def reverse_complement(dna):
+def rev_comp(dna):
     """
-    Return the reverse complement of a DNA sequence, preserving case.
-    Raises a ValueError if the sequence contains invalid characters.
+    Return the reverse complement of a DNA sequence.
     """
     # Make the complement
-    complement = ""
+    comp = ""
     for nt in dna:
         if nt == "A":
-            complement += "T"
+            comp += "T"
         elif nt == "a":
-            complement += "t"
+            comp += "t"
         elif nt == "T":
-            complement += "A"
+            comp += "A"
         elif nt == "t":
-            complement += "a"
+            comp += "a"
         elif nt == "G":
-            complement += "C"
+            comp += "C"
         elif nt == "g":
-            complement += "c"
+            comp += "c"
         elif nt == "C":
-            complement += "G"
+            comp += "G"
         elif nt == "c":
-            complement += "g"
+            comp += "g"
         else:
-            raise ValueError(f"Invalid nucleotide found: {nt}")
+            raise ValueError (f"Invalid nucleotide found: {nt}")
     # Make the reverse
-    rev_comp = complement[::-1]
+    rev_comp = comp[::-1]
     return rev_comp
+
+### Add tests to make sure function works as expected
+def test_rev_comp_lower(): # Testing all lowercase input
+    expected = "atgc"
+    observed = rev_comp("gcat")
+    assert observed == expected, f'Expected is ({expected}), got ({observed}))'
+
+def test_rev_comp_upper(): # Testing all uppercase input
+    expected = "TAGCGC"
+    observed = rev_comp("GCGCTA")
+    assert observed == expected, f'Expected is ({expected}), got ({observed})'
+
+def test_rev_comp_mixed(): # Testing mixed case input
+    expected = "agTCAgCtA"
+    observed = rev_comp("TaGcTGAct")
+    assert observed == expected, f'Expected is ({expected}), got ({observed})'
+
+def test_rev_comp_non_nt():
+    try:
+        observed = rev_comp("ATCGN")
+    except ValueError:
+        return
+    assert False, 'Expected ValueError exception, got ({observed})'        
+
