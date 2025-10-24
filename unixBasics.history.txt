@@ -1,0 +1,181 @@
+    1  vi first_vi_file.txt
+    2  more first_vi_file.txt
+    3  vi first_vi_file.txt
+    4  ssh-keygen -t ed25519 -C "yael.hartig@gmail.com"
+    5  eval "$(ssh-agent -s)"
+    6  open ~/.ssh/config
+    7  touch ~/.ssh/config\n
+    8  vi ~/.ssh/config
+    9  vi ~/.ssh/config
+   10  cat ~/.ssh/config
+   11  cd ~/.ssh/
+   12  ls
+   13  cat id_ed25519
+   14  cat id_ed25519.pub
+   15  cd ~
+   16  makedir PFB_problemsets
+   17  mkdir PFB_problemsets
+   18  pwd
+   19  cd PFB_problemsets
+   20  pwd
+   21  echo "# PFB_problemsets" >> README.md
+   22  git init
+   23  git add README.md
+   24  git commit -m "first commit"
+   25  git branch -M main
+   26  git remote add origin git@github.com:hartigpy/PFB_problemsets.git
+   27  git push -u origin main
+   28  git config --global --edit
+   29  git commit --amend --reset-author
+   30  git config --global user.name "Your Name"
+   31  git config --global user.name "hartigpy"
+   32  git config --global user.email yael.hartig@gmail.com
+   33  git commit --amend --reset-author
+   34  git commit
+   35  git add cancer_genes.fasta 
+   36  git commit
+   37  git commit -m "added file"
+   38  git push
+   39  pwd
+   40  git status
+   41  git pull
+   42  git remote add origin git@github.com:hartigpy/PFB_problemsets.git\ngit branch -M main\ngit push -u origin main
+   43  git status
+   44  git add .
+   45  git status
+   46  git commit 
+   47  git push
+   48  vi cuffdiff.txt
+   49  git status
+   50  git add cuffdiff.txt
+   51  git commit -m "changed file"
+   52  git push
+   53  vi cuffdiff.txt
+   54  git status
+   55  git add cuffdiff.txt
+   56  git commit -m "changed file"
+   57  git push
+   58  git status
+   59  git add differentiall.expressed.genes.txt
+   60  cd ~/PFB_problemsets/.git/hooks/
+   61  curl -O https://raw.githubusercontent.com/prog4biol/pfb2025/master/setup/pre-commit
+   62  pwd
+   63  cd ~
+   64  git clone https://github.com/prog4biol/pfb2025.git
+   65  git status
+   66  PFB_problemsets ls
+   67  ls PFB_problemsets
+   68  git status
+   69  cd ~
+   70  pwd
+   71  cd PFB_problemsets
+   72  ls
+   73  pwd
+   74  ls
+   75  git status
+   76  mkdir files
+   77  ls
+   78  man mv
+   79  man mv
+   80  mv cancer_genes.fasta /Users/pfb/PFB_problemsets/files
+   81  ls
+   82  git add files/cancer_genes.fasta
+   83  git commit -m 'adding cancer_genes.fasta'
+   84  git push
+   85  vi mysequences.txt
+   86  ls
+   87  vi mysequences.txt
+   88  vi mysequences.txt
+   89  vi mysequences.txt
+   90  git add mysequences.txt
+   91  git commit -m 'adding mysequences.txt'
+   92  git push
+   93  ls
+   94  mkdir fastas
+   95  ls
+   96  man cp
+   97  man cp
+   98  cp files/cancer_genes.fasta /Users/pfb/PFB_problemsets/fastas
+   99  ls
+  100  fastas ls
+  101  ls fastas
+  102  ls files
+  103  man rm
+  104  rm /Users/pfb/PFB_problemsets/files/cancer_genes.fasta
+  105  ls files
+  106  git status
+  107  git add cancer_genes.fasta
+  108  git commit -m 'adding cancer_genes.fasta'
+  109  git push
+  110  git status
+  111  git add files/cancer_genes.fasta
+  112  git commit -m 'adding cancer_genes.fasta'
+  113  git push
+  114  git status
+  115  git add fastas/
+  116  git commit -m 'adding fastas/'
+  117  git push
+  118  git status
+  119  ls
+  120  git status
+  121  git status
+  122  ls
+  123  git status
+  124  vi oops.txt
+  125  git status
+  126  git add oops.txt
+  127  git commit -m 'adding oops.txt'
+  128  git push
+  129  git rm oops.txt
+  130  git commit -m 'removing oops.txt'
+  131  git push
+  132  vi oops2.txt
+  133  git status
+  134  git add oops2.txt
+  135  git commit -m 'adding oops2.txt'
+  136  git push
+  137  rm oops2.txt
+  138  git status
+  139  git add oops2.txt
+  140  git commit -m 'removing oops2.txt'
+  141  git push
+  142  never
+  143  ls
+  144  echo never
+  145  echo never.txt
+  146  ls
+  147  vi never.txt
+  148  git status
+  149  git add never.txt
+  150  git reset never.txt
+  151  git status
+  152  git status
+  153  git rm never.txt
+  154  ls
+  155  git status
+  156  got reset never.txt
+  157  git status
+  158  git add never.txt
+  159  git status
+  160  git reset never.txt
+  161  git status
+  162  man rm
+  163  man cp
+  164  git add never.txt
+  165  git rm never.txt
+  166  git status
+  167  git commit -m 'removing never.txt'
+  168  git push
+  169  rm never.txt
+  170  git add never.txt
+  171  git commit -m 'removing never.txt'
+  172  git push
+  173  history
+  174  historz > unixBasics.history.txt
+  175  history > unixBasics.history.txt
+  176  vi unixBasics.history.txt
+  177  history100
+  178  man history
+  179  history
+  180  history 100
+  181  history 1

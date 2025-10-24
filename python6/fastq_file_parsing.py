@@ -18,8 +18,10 @@ with open ("Python_06.fastq", "r") as fastq:
     for line in fastq: # for each line
         line.rstrip() # removes the empty character in the end of a line
         num_char = num_char + len(line) # add length to the number of characters
+        
         # check if line has sequence ID
         if line.startswith("@") and num_lines % 4 == 0: # checks if it starts with @ and if modulus of line is 0 (1st line in the block of 4 lines
+            num_seq_id = num_seq_id + 1
         # check if line has sequence    
         if num_lines % 4 == 1: # checks if the modulus of line is 1 (2nd line in the block of 4 lines)
             num_nt = num_nt + len(line)
@@ -30,7 +32,6 @@ with open ("Python_06.fastq", "r") as fastq:
 ### Calculate average lengths         
 avg_line_length = num_char / num_lines
 avg_nt_line_length = num_nt / num_nt_lines     
-#### THIS IS NOT FINSHED YET
         
 ### Print results
 print(f'Total number of lines: {num_lines}')
